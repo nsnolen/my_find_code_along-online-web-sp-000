@@ -3,10 +3,11 @@ require 'pry'
 def my_find(collection)
   i = 0
   while i < collection.length
-    i += 0
+  
   if yield(collection[i])
     return collection[i]
   end
+  i += 0
 end
 
 collection = (1..100).to_a
